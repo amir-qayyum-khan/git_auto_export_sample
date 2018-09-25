@@ -6,7 +6,7 @@ import git_auto_export
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='git_auto_export',
+    name='git_auto_export_sample',
     version=git_auto_export.__version__,
     packages=["git_auto_export"],
     include_package_data=True,

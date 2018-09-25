@@ -1,7 +1,7 @@
-#### Steps to install:
+#### Steps to install on edX platform:
 
 - Update github.in i.e
-  - `-e git+https://github.com/amir-qayyum-khan/git_auto_export_sample.git@v0.1#egg=git_auto_export==0.1`
+  - `-e git+https://github.com/amir-qayyum-khan/git_auto_export_sample.git@v0.1#egg=git_auto_export_sample==0.1`
 - Update cms/envs/common. Append **INSTALLED_APPS**
     ```    
     # git auto export
@@ -18,3 +18,13 @@
       log.exception(error)
   ``` 
 - Now restart application.
+- open cms.env and lms.env or private.py and set FEATURES flags
+  ````json
+  "FEATURES": {
+    "ENABLE_EXPORT_GIT": true,
+    "ENABLE_GIT_AUTO_EXPORT": true
+  }
+  ```
+
+#### SetUp CMS for git export:
+- 
