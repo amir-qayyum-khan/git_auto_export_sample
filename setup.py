@@ -6,7 +6,7 @@ import git_auto_export
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='git_auto_export_sample',
+    name='git-auto-export-sample',
     version=git_auto_export.__version__,
     packages=["git_auto_export"],
     include_package_data=True,
@@ -14,6 +14,7 @@ setup(
     description='A task that auto save course OLX to git when author publish it',
     url='https://github.com/amir-qayyum-khan/git_auto_export_sample',
     install_requires=[
+        'setuptools',
         'edx-opaque-keys',
         'celery',
     ],
